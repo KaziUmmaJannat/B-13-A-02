@@ -3,6 +3,7 @@
   font-optical-sizing: auto;
   
 }
+
 *{
     margin: 0;
     padding: 0;
@@ -34,7 +35,9 @@
    display:none;
 }
 
-header .banner  {
+
+
+ header .banner  {
     background-image: url("../assets/hero-bg.png");
     max-width: 100%;
     height: 760px;
@@ -48,12 +51,12 @@ nav{
     background: rgba(26, 11, 46, 1);
   
 }
+
 nav ul{
     display:flex;
     gap: 30px;
     list-style: none;
 }
-
 .banner-text {
     position: absolute;
     bottom: -70px;
@@ -101,4 +104,369 @@ nav ul{
 
 .banner-btn:hover {
     transform: translate(-50%, -50%) scale(1.2) rotate(45deg);
+}
+.banner-container {
+   position: relative;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   padding: 101px 300px;
+   height: 100%;
+}
+.img-container1 {
+   position: absolute;
+   z-index: 1;
+   left: 50%;
+   top: 45%;
+   transform: translate(-50%, -50%) scale(1.25);
+}
+.img-container2 {
+   z-index: 2;
+   position: absolute;
+   left: 50%;
+   top: 45%;
+   transform: translate(-50%, -50%);
+}
+
+
+ #About{
+    text-align: center;
+    padding-top: 120px;
+ }
+ .About-text h1{
+    font-size: 60px;
+    font-weight: 700;
+    margin-bottom: 16px;
+
+ }
+ .About-text p{
+    font-size: 16px;
+    margin-bottom: 160px;
+
+ }
+ .About-card{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    gap: 80px;
+    padding: 0 200px;
+ }
+ .card{
+    padding: 40px;
+    margin-bottom: 121px;
+ }
+  .card h3{
+    font-size: 48px;
+    font-weight: 600;
+    margin-bottom: 16px;
+ } 
+
+#grid-element{
+   
+      padding-bottom: 160px;
+}
+
+#grid-element h2{
+    text-align: center;
+    font-size: 48px;
+    font-weight: 700;
+    margin-bottom: 40px;
+}
+ .grid-container{
+    max-width: 1200px;
+    display: grid;
+    grid-template-columns: repeat(3,380px);
+    grid-template-rows: repeat(3,225px);
+    gap:30px;
+    margin: 0 auto;
+  
+
+ }
+ .grid-item{
+   padding: 20px;
+   /* width: 100%;
+   height: 100%; */
+   display: flex;
+   justify-content: start;
+   align-items: center;
+   border-radius: 40px;
+   background-color: rgba(53, 17, 101, 0.4);
+ }
+ .layout1{
+    grid-column: span 1;
+    grid-row: span 2;
+ }
+ .layout2{
+    grid-column: span 2;
+    grid-row: span 1;
+ }
+ .grid-item-contain img {
+    margin-bottom: 21px;
+ }
+.grid-item-contain h4{
+    margin-bottom: 16px;
+    font-size: 1.5rem;
+}
+.grid-item-contain p{
+    font-size: 1rem;
+    color:#FFFFFF;
+}
+
+
+#feature{
+    background-color: #1A0B2E;
+}
+#feature h2{
+    text-align: center;
+    font-size: 3rem;
+    font-weight: 700;
+    margin-bottom: 40px;
+}
+.feature-card-container{
+    max-width: 1200px;
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    margin: 0 auto;
+    color:#FFFFFF;
+    padding-bottom: 130px;
+
+}
+.feature-card{
+    background-color: #250D44;
+    border-radius: 10px;
+}
+.video iframe{
+   width: 100%;
+   height:214px;
+
+
+}
+.feature-card h4{
+    font-size: 1.7rem;
+    margin-bottom: 13px;
+}
+.feature-card p{
+    margin-bottom: 12px;
+}
+.feature-card-text{
+    padding:20px;
+
+}
+
+#host{
+  background: rgba(26, 11, 46, 1);
+  padding-bottom: 40px;
+  overflow: hidden;
+}
+
+#host h1{
+  text-align: center;
+  font-size: 3rem;
+  font-weight: 700;
+  margin-bottom: 40px;
+}
+
+.host-class{
+  max-width: 1200px;
+  margin: 0 auto;
+  background-color: #351165;
+  border-radius: 20px;
+  padding: 20px;
+}
+
+.host-container{
+  display: flex;
+  gap: 20px;
+  align-items: center;
+}
+
+.host-text h3{
+  font-size: 2rem;
+  margin-bottom: 16px;
+}
+
+.host-text p{
+  font-size: 1rem;
+  margin-bottom: 16px;
+}
+
+.host-icon{
+  display: flex;
+  gap: 15px;
+}
+
+.host-icon img{
+  border: 1px solid rgba(83, 60, 114, 1);
+  border-radius: 22px;
+  padding: 12px;
+}
+
+
+ #footer{
+    background: url("../assets/footer-bg.png");
+    max-width: 1600px;
+    /* height: 100%; */
+      background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+ }
+ .footer-head{
+    font-size: 2.5rem;
+    text-align: center;
+    margin-top: 0;
+    padding-top: 100px;
+ }
+ .footer-icon ul{
+    display: flex;
+    gap: 40px;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+    padding-top: 15px;
+ }
+ .footer-copy{
+    text-align: center;
+    padding-top: 50px;
+    color:#FAFAFA;
+    padding-bottom: 120px;
+ }
+ 
+
+@media (max-width: 576px) {
+    nav {
+        padding: 16px 20px;
+        flex-direction: row;
+        justify-content: space-around;
+        gap: 16px;
+    }
+    
+    nav ul {
+       display:none;
+    }
+    
+    nav .btn {
+        display: none;
+    }
+    
+    nav .display-hidden {
+        display: block;
+    }
+    
+    .banner {
+        height: 500px;
+    }
+    
+    .banner-container {
+        padding: 50px 20px;
+    }
+    
+    .banner-text {
+        bottom: 70px;
+        padding: 0 20px;
+    }
+    
+    .banner-text h2 {
+        font-size: 32px;
+        margin-bottom: 8px;
+    }
+    
+    .banner-text p {
+        font-size: 14px;
+        margin-bottom: 16px;
+    }
+    
+    .banner-footer {
+        bottom: -20px;
+        flex-direction: row;
+        gap: 8px;
+    }
+    
+    .banner-btn {
+        display: block;
+        top: 30%;
+        left: 85%;
+        font-size: 18px;
+        padding: 10px 20px;
+    }
+    
+    .img-container1 {
+        top: 35%;
+        transform: translate(-50%, -50%) scale(1.25);
+    }
+    
+    .img-container2 {
+        top: 35%;
+        transform: translate(-50%, -50%);
+    }
+    
+    .About-card {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+        padding: 0 20px;
+    }
+    
+    .card {
+        padding: 20px;
+        margin-bottom: 40px;
+    }
+    
+    .card h3 {
+        font-size: 32px;
+    }
+    
+    .About-text{
+      padding: 20px;
+    }
+    
+    .About-text h1 {
+        font-size: 36px;
+    }
+    
+    .grid-container {
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+        padding: 0 20px;
+    }
+    
+    .layout1, .layout2 {
+        grid-column: span 1;
+        grid-row: span 1;
+    }
+    
+    .feature-card-container {
+        flex-direction: column;
+        padding: 0 20px 60px;
+    }
+    
+    .host-container {
+        flex-direction: column;
+        text-align: center;
+    }
+    
+    .host-class {
+        margin: 0 20px;
+    }
+    
+    .host-icon {
+        justify-content: center;
+    }
+    
+    #footer {
+        padding: 0 20px;
+    }
+    
+    .footer-head {
+        font-size: 1.8rem;
+        padding-top: 60px;
+    }
+    
+    .footer-icon ul {
+        gap: 20px;
+        padding-top: 20px;
+    }
+    
+    .footer-copy {
+        padding-top: 30px;
+        padding-bottom: 60px;
+    }
 }
