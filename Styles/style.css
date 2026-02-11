@@ -4,6 +4,7 @@
   
 }
 
+
 *{
     margin: 0;
     padding: 0;
@@ -51,6 +52,7 @@ nav{
     background: rgba(26, 11, 46, 1);
   
 }
+
 
 nav ul{
     display:flex;
@@ -331,6 +333,9 @@ nav ul{
     padding-bottom: 120px;
  }
  
+
+
+
 
 @media (max-width: 576px) {
     nav {
